@@ -29,13 +29,12 @@ Follow 3 simple steps.
           print("selectedIndex = \(selectedIndex), value = \(selectedValue)")
         }
 
-Get the Selected Value and index from the clouse, as indicated in sample code above. 
-Note: Closure does not get called when used presses the cancel button or hides the picker by tapping elseWhere
+Get the Selected Value and index from the closure, as indicated in sample code above. 
+Note: Closure does not get called when used presses the cancel button or hides the picker by tapping elseWhere.
 
 Credits.
 
 Awais Fayyaz.
-
 AwaisFayyaz17@gmail.com
 
 iOS Developer @ BugdevStudios,
