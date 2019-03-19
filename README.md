@@ -29,6 +29,12 @@ Follow 3 simple steps.
           print("selectedIndex = \(selectedIndex), value = \(selectedValue)")
         }
 
+You can also use one line static function to acheive the same result. something like this. 
+
+       AFPickerView.showFrom(viewController: self, dataSource: pickerValues) { (index, value) in
+              print("index = \(index), value = \(value)")
+       }
+
 Get the Selected Value and index from the closure, as indicated in sample code above. 
 Note: Closure does not get called when used presses the cancel button or hides the picker by tapping elseWhere.
 
