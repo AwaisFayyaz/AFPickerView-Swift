@@ -50,9 +50,9 @@ class ViewController: UIViewController {
 //    let pickerView = AFPickerView.init(dataSource: pickerValues, selectedIndex: 3)
 ////    pickerView.showFromWindow()
 //
-//    pickerView.showFrom(viewController: self) { (index, value) in
-//      print("index = \(index), value = \(value)")
-//    }
+    pickerView.showFrom(viewController: self) { (index, value) in
+      print("index = \(index), value = \(value)")
+    }
     
     
   }

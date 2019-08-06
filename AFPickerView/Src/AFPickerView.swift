@@ -119,7 +119,7 @@ class AFPickerView: UIView {
     
   }
   
-  func hide() {
+  func hidePicker() {
     
     bottomViewPickerContainer.constant = -heightPickerView
     UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
@@ -162,17 +162,17 @@ class AFPickerView: UIView {
   @IBAction func btnDoneTapped(_ sender: Any) {
     
     self.doneHandler?(selectedRowIndex, dataSourceArray[selectedRowIndex])
-    hide()
+    hidePicker()
   }
   
   @IBAction func btnCancelTapped(_ sender: UIButton) {
-    hide()
+    hidePicker()
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     let touch = touches.first
     if touch?.view == dimView {
-      hide()
+      hidePicker()
     }
   }
   
